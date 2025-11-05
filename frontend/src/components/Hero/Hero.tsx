@@ -5,7 +5,7 @@ import ArahKiblat from './ArahKiblat'
 const Hero = () => {
     return (
         <>
-            
+            yahaha
         </>
 
     )

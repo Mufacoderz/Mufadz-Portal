@@ -1,16 +1,24 @@
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero/Hero";
-import Footer from "./components/Footer";
+import ChatGlobal from "./pages/ChatPage";
+import BacaQuran from "./pages/QuranPage";
+import Profile from "./pages/ProfilePage";
+import Homepages from "./pages/HomePage";
 
-export default function Home() {
+function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#edf5ff] via-[#d8ecff] to-[#b8d9f9] text-gray-800 font-sans flex flex-col">
-
-      <Navbar/>
-      <Hero/>
-      <Footer/>
-      
-    </div>
+    <BrowserRouter>
+      <div className="min-h-screen bg-gray-50">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Homepages />} />
+          <Route path="/chat" element={<ChatGlobal />} />
+          <Route path="/quran" element={<BacaQuran />} />
+          <Route path="/profile" element={<Profile />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
+
+export default App;
