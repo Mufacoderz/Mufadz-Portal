@@ -1,7 +1,21 @@
-import ComingSoon from "../components/ComingSoon";
+// src/pages/BacaQuran.tsx
+export default function BacaQuran() {
+    return (
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-blue-50 to-white p-4">
+            <h1 className="text-2xl font-semibold text-blue-700 mb-4">📖 Baca Al-Qur'an</h1>
+            <p className="text-gray-500">halaman Sementara versi embedded </p>
+            <div className="w-full max-w-5xl h-[80vh] rounded-xl overflow-hidden shadow-lg border border-blue-100">
+                <iframe
+                    src="https://quran-react-js-rmie.vercel.app/"
+                    title="Quran Reader"
+                    className="w-full h-full border-none"
+                    allowFullScreen
+                ></iframe>
+            </div>
 
-const BacaQuran = () => {
-    return <ComingSoon title="Baca Quran" />;
-};
-
-export default BacaQuran;
+            <p className="mt-3 text-sm text-gray-500">
+                Sumber: <a href="https://quran-react-js-rmie.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">Quran React JS</a>
+            </p>
+        </div>
+    );
+}
