@@ -7,7 +7,6 @@ import Homepages from "./pages/HomePage"
 import DoaList from "./pages/DoaPage/DoaList"
 import DoaDetail from "./pages/DoaPage/DoaDetail"
 import Panduan from "./pages/PanduanPage"
-import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -24,7 +23,7 @@ function App() {
             <Route path="/profile" element={<Profile />} />
             <Route path="/panduan" element={<Panduan />} />
           </Routes>
-        <Footer/>
+        
         </main>
       </div>
     </BrowserRouter>

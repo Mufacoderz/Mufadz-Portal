@@ -2,6 +2,7 @@ import { useDoa } from "../../api/doa"
 import { Sparkles } from "lucide-react"
 import DoaListCard from "../../components/Doa/DoaListCard"
 import HeadingPage from "../../components/Heading"
+import Footer from "../../components/Footer"
 
 export default function DoaList() {
     const { doaList, loading, error } = useDoa()
@@ -30,11 +31,14 @@ export default function DoaList() {
         )
 
     return (
-        <section className="max-w-5xl mx-auto px-5 mt-10">
-            
-            <HeadingPage title="Daftar Doa"/>
-            <DoaListCard/>
-            
-        </section>
+        <>
+            <section className="max-w-5xl mx-auto px-5 my-10">
+
+                <HeadingPage title="Daftar Doa" />
+                <DoaListCard />
+
+            </section>
+            <Footer/>
+        </>
     )
 }

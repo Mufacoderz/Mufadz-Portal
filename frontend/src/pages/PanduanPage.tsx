@@ -1,6 +1,7 @@
 import { BookOpen, MessageCircle, Calendar, User, Sun, Feather } from "lucide-react"
 import { useNavigate } from "react-router-dom"
 import HeadingPage from "../components/Heading"
+import Footer from "../components/Footer"
 
 export default function Panduan() {
     const navigate = useNavigate()
@@ -60,7 +61,8 @@ export default function Panduan() {
     }
 
     return (
-        <div className="max-w-6xl mx-auto px-5 mt-10">
+        <>
+            <div className="max-w-6xl mx-auto px-5 my-10">
             <HeadingPage title="Panduan Mufadz App"/>
             
             {/* Hero Section */}
@@ -117,5 +119,7 @@ export default function Panduan() {
                 </a>
             </div>
         </div>
+        <Footer/>
+        </>
     )
 }
