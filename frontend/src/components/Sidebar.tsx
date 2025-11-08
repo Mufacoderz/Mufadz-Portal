@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Link, useLocation } from "react-router-dom"
-import { MessageCircle, Home, BookOpen, User, LogOut, Menu, X, Heart, UserCircle } from "lucide-react"
+import { MessageCircle, Home, BookOpen, User, LogOut, Menu, X, Heart, UserCircle, HelpCircle } from "lucide-react"
 import logo from "../assets/logohero.webp"
 
 const Sidebar = () => {
@@ -14,6 +14,7 @@ const Sidebar = () => {
         { name: "Baca Quran", path: "/quran", icon: <BookOpen size={20} /> },
         { name: "Daftar Do'a", path: "/doa", icon: <Heart size={20} /> },
         { name: "Profile", path: "/profile", icon: <User size={20} /> },
+        { name: "Panduan", path: "/panduan", icon: <HelpCircle size={20} /> },
     ]
 
     return (

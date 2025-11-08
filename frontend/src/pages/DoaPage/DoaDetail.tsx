@@ -35,13 +35,16 @@ export default function DoaDetail() {
             </button>
 
             <div className="bg-white shadow-lg rounded-2xl p-8 border border-blue-100">
-                <h1 className="text-3xl font-bold text-blue-700 mb-4 text-center">{doa.judul}</h1>
-                
+                <h1 className="text-3xl font-bold text-blue-700 mb-8 text-center">{doa.judul}</h1>
+
                 <div className="text-right mb-6">
-                    <p className="text-2xl leading-relaxed">{doa.arab}</p>
+                    <p className="mt-2 text-2xl leading-relaxed text-right" style={{ fontFamily: "'Amiri', serif" }}>
+                        {doa.arab}
+                    </p>
+
                 </div>
 
-                <p className="text-center italic text-gray-700 mb-4 text-lg">{doa.latin}</p>
+                <p className="text-center italic text-gray-500 mb-4 text-lg">{doa.latin}</p>
 
                 <p className="text-gray-800 text-base leading-relaxed">{doa.terjemah}</p>
             </div>

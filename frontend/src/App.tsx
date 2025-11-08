@@ -6,6 +6,7 @@ import Profile from "./pages/ProfilePage"
 import Homepages from "./pages/HomePage"
 import DoaList from "./pages/DoaPage/DoaList"
 import DoaDetail from "./pages/DoaPage/DoaDetail"
+import Panduan from "./pages/Panduan"
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/doa" element={<DoaList />} />
             <Route path="/doa/:id" element={<DoaDetail />} />   
             <Route path="/profile" element={<Profile />} />
+            <Route path="/panduan" element={<Panduan />} />
           </Routes>
         </main>
       </div>

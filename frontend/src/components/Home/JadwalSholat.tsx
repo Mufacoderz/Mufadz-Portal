@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Sun, Sunrise, Sunset, Moon } from "lucide-react"
+import { Sun, Sunrise, Sunset, Moon, Sparkles } from "lucide-react"
 import { getPrayerTimes } from "../../api/aladhan"
 import { useLocation } from "../../hooks/useLocation"
 
@@ -20,7 +20,7 @@ const JadwalSholat: React.FC = () => {
     }, [coords])
 
     if (error) return <p className="text-red-500 text-center">{error}</p>
-    if (!times) return <p className="text-blue-500 text-center">Memuat jadwal sholat...</p>
+    if (!times) return <p className="text-blue-500 text-center"><Sparkles className="animate-spin-slow" /> Memuat jadwal sholat...</p>
 
     const prayers: Prayer[] = [
         { name: "Subuh", time: times.Fajr, icon: <Sunrise size={20} /> },

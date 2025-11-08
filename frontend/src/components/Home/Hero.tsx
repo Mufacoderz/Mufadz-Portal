@@ -17,9 +17,9 @@ const Hero = () => {
                 <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl shadow-md hover:bg-blue-700 hover:shadow-lg transition-all">
                     Mulai Sekarang
                 </button>
-                <button className="px-6 py-3 bg-white border border-blue-200 text-blue-600 font-semibold rounded-xl hover:bg-blue-50 transition-all">
+                <a href="/panduan" className=" px-6 py-3 bg-white border border-blue-200 text-blue-600 font-semibold rounded-xl hover:bg-blue-50 transition-all">
                     Pelajari Lebih Lanjut
-                </button>
+                </a>
             </div>
         </div>
     )
