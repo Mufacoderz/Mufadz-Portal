@@ -20,15 +20,16 @@ const Sidebar = () => {
         <>
             <button
                 onClick={() => setOpen(!open)}
-                className={`md:hidden fixed top-4 z-50 bg-white p-2 rounded-lg shadow-md border hover:bg-blue-50 transition-all duration-300 
-                    ${open ? "left-[275px]" : "left-4"}`}
+                className={`md:hidden fixed top-4 z-50 bg-white p-2 rounded-lg border-none  transition-all duration-300 
+                    ${open ? "left-[233px]" : "-left-1"}
+                    ${open ? 'hover:bg-white' : 'hover:bg-blue-50'}`}
             >
                 {open ? <X size={24} /> : <Menu size={24} />}
             </button>
 
             <aside
                 className={`fixed top-0 left-0 h-full bg-white shadow-lg border-r z-40 transform transition-transform duration-300 ease-in-out
-                    ${open ? "translate-x-0" : "-translate-x-full"} md:translate-x-0 w-64`}
+                    ${open ? "translate-x-0" : "-translate-x-full"} md:translate-x-0 w-60 md:w-64`}
             >
                 <div className="flex items-center gap-3 p-5 border-b">
                     <img

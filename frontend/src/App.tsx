@@ -4,22 +4,21 @@ import ChatGlobal from "./pages/ChatPage"
 import BacaQuran from "./pages/QuranPage"
 import Profile from "./pages/ProfilePage"
 import Homepages from "./pages/HomePage"
-import DoaList from "./pages/DoaPage"
+import DoaList from "./pages/DoaPage/DoaList"
+import DoaDetail from "./pages/DoaPage/DoaDetail"
 
 function App() {
   return (
     <BrowserRouter>
       <div className="flex min-h-screen bg-gray-50">
-        {/* Sidebar */}
         <Sidebar />
-
-        {/* Konten utama */}
         <main className="flex-1 ml-0 md:ml-64 p-6 transition-all duration-300">
           <Routes>
             <Route path="/" element={<Homepages />} />
             <Route path="/chat" element={<ChatGlobal />} />
             <Route path="/quran" element={<BacaQuran />} />
             <Route path="/doa" element={<DoaList />} />
+            <Route path="/doa/:id" element={<DoaDetail />} />   
             <Route path="/profile" element={<Profile />} />
           </Routes>
         </main>
@@ -28,4 +27,4 @@ function App() {
   );
 }
 
-export default App
+export default App;

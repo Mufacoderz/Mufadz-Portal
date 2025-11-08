@@ -6,3 +6,17 @@
 /* *{
     border: 1px solid red;
 } */
+
+@keyframes shine {
+    0% {
+        left: -75%;
+    }
+
+    100% {
+        left: 125%;
+    }
+}
+
+.animate-shine {
+    animation: shine 3s infinite;
+}
