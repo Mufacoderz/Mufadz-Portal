@@ -13,8 +13,8 @@ const ComingSoon: React.FC<ComingSoonProps> = ({ title, message }) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
         >
-            <div className="bg-white/60 backdrop-blur-md shadow-sm border border-blue-100 rounded-2xl px-8 py-6">
-                <p className="text-gray-700 font-medium">
+            <div className="bg-white/60 dark:bg-blue-950/60 backdrop-blur-md shadow-sm border border-blue-100 dark:border-blue-900 rounded-2xl px-8 py-6">
+                <p className="text-gray-700 dark:text-gray-100 font-medium">
                     {message || ` Fitur ${title} belum tersedia.`}
                 </p>
             </div>

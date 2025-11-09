@@ -4,12 +4,12 @@ import HeadingPage from "../components/Heading";
 export default function BacaQuran() {
     return (
         <>
-            <div className="flex flex-col items-center justify-center min-h-screen my-10">
+            <div className="flex flex-col items-center justify-center min-h-screen py-10 dark:bg-gray-900">
 
                 <HeadingPage title="Baca Al-Qur'an" />
 
                 <p className="text-gray-500">halaman Sementara versi embedded </p>
-                <div className="w-full max-w-5xl h-[80vh] rounded-xl overflow-hidden shadow-lg border border-blue-100">
+                <div className="w-full max-w-5xl h-[80vh] rounded-xl overflow-hidden shadow-lg border border-blue-100 dark:border-blue-900">
                     <iframe
                         src="https://quran-react-js-rmie.vercel.app/"
                         title="Quran Reader"
