@@ -13,7 +13,7 @@ const HeaderSidebar = () => {
             </div>
 
             <div className=" border-b dark:border-gray-600  py-2 px-1">
-                <div className='flex items-center gap-3 p-2 transition bg-gray-100 hover:bg-blue-50 dark:bg-gray-800 dark:hover:bg-blue-900  rounded-md'>
+                <div className='flex items-center gap-3 p-2 transition bg-gray-100 hover:bg-blue-50 dark:bg-gray-800 dark:hover:bg-blue-950  rounded-md'>
                     <img
                     src={Profil}
                     alt="profil"

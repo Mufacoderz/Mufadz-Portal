@@ -14,10 +14,10 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start flex-wrap">
-                <button className="px-6 py-3 bg-blue-600 text-white dark:text-gray-800 font-semibold rounded-xl shadow-md hover:bg-blue-700 dark:hover:bg-blue-500 hover:shadow-lg transition-all">
+                <button className="px-6 py-3 bg-blue-600 dark:bg-blue-300 text-white dark:text-gray-800 font-semibold rounded-xl shadow-md hover:bg-blue-700 dark:hover:bg-blue-500 hover:shadow-lg transition-all">
                     Mulai Sekarang
                 </button>
-                <a href="/panduan" className=" px-6 py-3 bg-white dark:bg-blue-950 dark:border-blue-900 border border-blue-200 text-blue-600 font-semibold rounded-xl hover:bg-blue-50 dark:hover:bg-blue-900 transition-all">
+                <a href="/panduan" className=" px-6 py-3 bg-white dark:bg-gray-700 dark:border-blue-900 border border-blue-200 text-blue-600 dark:text-blue-300 font-semibold rounded-xl hover:bg-blue-50 dark:hover:bg-blue-900 transition-all">
                     Pelajari Lebih Lanjut
                 </a>
             </div>

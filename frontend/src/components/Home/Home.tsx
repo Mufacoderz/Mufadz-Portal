@@ -19,7 +19,7 @@ const Home = () => {
                         absolute top-0 left-[-75%] w-1/2 h-full
                         bg-gradient-to-r from-transparent via-white/60 to-transparent
                         dark:via-gray-700/30
-                        animate-shine pointer-events-none z-50
+                        animate-shine pointer-events-none z-20
                     "
                 />
 

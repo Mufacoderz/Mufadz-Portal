@@ -23,14 +23,14 @@ const DarkModeToggle = () => {
         w-10 h-10 rounded-full
         shadow-md border transition-all duration-300
         ${darkMode
-                    ? "bg-gray-900 border-gray-700 hover:bg-yellow-900"
-                    : "bg-white border-gray-200 hover:bg-blue-50"
+                    ? "bg-gray-900 border-gray-700 hover:bg-blue-900"
+                    : "bg-white border-gray-200 hover:bg-blue-100"
                 }
         `}
             title={darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
         >
             {darkMode ? (
-                <Sun size={22} className="text-yellow-400 transition-transform duration-300 hover:rotate-45" />
+                <Sun size={22} className="text-blue-300 transition-transform duration-300 hover:rotate-45" />
             ) : (
                 <Moon size={22} className="text-blue-500 transition-transform duration-300 hover:rotate-45" />
             )}
