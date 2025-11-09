@@ -7,12 +7,14 @@ import Homepages from "./pages/HomePage"
 import DoaList from "./pages/DoaPage/DoaList"
 import DoaDetail from "./pages/DoaPage/DoaDetail"
 import Panduan from "./pages/PanduanPage"
+import DarkModeToggle from "./components/DarkModeToggle"
 
 function App() {
   return (
     <BrowserRouter>
       <div className="flex min-h-screen bg-gray-50">
         <Sidebar />
+        <DarkModeToggle/>
         <main className="flex-1 ml-0 md:ml-64 transition-all duration-300">
           <Routes>
             <Route path="/" element={<Homepages />} />

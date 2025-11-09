@@ -1,7 +1,8 @@
 import { useState } from "react"
 import { Link, useLocation } from "react-router-dom"
-import { MessageCircle, Home, BookOpen, User, LogOut, ChevronRight, ChevronLeft, Heart, UserCircle, HelpCircle } from "lucide-react"
-import logo from "../assets/logohero.webp"
+import { MessageCircle, Home, BookOpen, User, LogOut, Menu, X, Heart, UserCircle, HelpCircle } from "lucide-react"
+
+import HeaderSidebar from "./HeaderSidebar"
 
 const Sidebar = () => {
     const [open, setOpen] = useState(false)
@@ -21,25 +22,19 @@ const Sidebar = () => {
         <>
             <button
                 onClick={() => setOpen(!open)}
-                className={`md:hidden fixed top-4 z-50 bg-white p-2 rounded-lg border-none  transition-all duration-300 
-                    ${open ? "left-[230px]" : "-left-1"}
+                className={`md:hidden fixed top-4 z-50 dark:text-white bg-white dark:bg-gray-900 p-2 rounded-lg border-none  transition-all duration-300 
+                    ${open ? "left-[230px]" : "left-[-5px]"}
                     ${open ? 'hover:bg-white' : 'hover:bg-blue-50'}`}
             >
-                {open ? <ChevronLeft size={24} /> : <ChevronRight size={24} />}
+                {open ? <X size={24} /> : <Menu size={24} />}
             </button>
 
             <aside
-                className={`fixed top-0 left-0 h-full bg-white shadow-lg border-r z-40 transform transition-transform duration-300 ease-in-out
+                className={`fixed top-0 left-0 h-full bg-white dark:bg-gray-900  shadow-lg border-r z-40 transform transition-transform duration-300 ease-in-out
                     ${open ? "translate-x-0" : "-translate-x-full"} md:translate-x-0 w-60 md:w-64`}
             >
-                <div className="flex items-center gap-3 p-5 border-b">
-                    <img
-                        src={logo}
-                        alt="logo"
-                        className="w-12 rounded-xl transition-transform duration-300 hover:-translate-y-1 hover:rotate-3"
-                    />
-                    <h1 className="text-xl font-bold text-blue-600">Mufadz App</h1>
-                </div>
+
+                <HeaderSidebar />
 
                 <ul className="mt-6 space-y-1 px-3">
                     {navItems.map((item) => {
@@ -51,8 +46,8 @@ const Sidebar = () => {
                                     onClick={() => setOpen(false)}
                                     className={`flex items-center gap-3 px-4 py-2 rounded-lg font-medium transition-all duration-200 hover:translate-x-1 
                                         ${isActive
-                                            ? "bg-blue-50 text-blue-600 shadow-sm border-l-4 border-blue-500"
-                                            : "text-gray-600 hover:bg-blue-50"
+                                            ? "bg-blue-50 text-blue-600 shadow-sm border-l-4 border-blue-500 dark:bg-blue-900 dark:text-blue-300 dark:border-blue-400"
+                                            : "text-gray-600 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-800"
                                         }`}
                                 >
                                     {item.icon}
@@ -82,7 +77,6 @@ const Sidebar = () => {
                 </div>
             </aside>
 
-            {/* Overlay */}
             {open && (
                 <div
                     onClick={() => setOpen(false)}
