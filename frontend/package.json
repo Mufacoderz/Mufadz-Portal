@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/changa": "^5.2.8",
+    "@fontsource/noto-kufi-arabic": "^5.2.9",
     "axios": "^1.13.1",
     "framer-motion": "^12.23.24",
     "hijri-date": "^0.2.2",

@@ -2,12 +2,13 @@ import { motion } from "framer-motion"
 import Hero from "./Hero"
 import JadwalSholat from "./JadwalSholat"
 import KalenderModern from "./Kalender"
+import MorphingShape from "./../Animated.Background"
 
 const Home = () => {
     return (
         <section
             className="
-                relative overflow-x-hidden py-16 min-h-screen box-border
+                relative overflow-hidden py-16 min-h-screen box-border
                 bg-gray-50 text-gray-900
                 dark:bg-gray-900 dark:text-gray-100
                 transition-colors duration-500
@@ -18,10 +19,11 @@ const Home = () => {
                     className="
                         absolute top-0 left-[-75%] w-1/2 h-full
                         bg-gradient-to-r from-transparent via-white/60 to-transparent
-                        dark:via-gray-700/30
+                        dark:hidden
                         animate-shine pointer-events-none z-20
                     "
                 />
+                <MorphingShape/>
 
             <div className="relative w-full max-w-full mx-auto px-4 sm:px-6 md:px-12 lg:px-24 flex flex-col gap-16 box-border">
             
@@ -33,6 +35,7 @@ const Home = () => {
                     transition={{ duration: 0.8 }}
                 >
                     <Hero />
+                    
                 </motion.div>
 
                 <motion.div

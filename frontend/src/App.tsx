@@ -9,6 +9,7 @@ import DoaDetail from "./pages/DoaPage/DoaDetail"
 import Panduan from "./pages/PanduanPage"
 import DarkModeToggle from "./components/DarkModeToggle"
 import ChatBot from "./pages/ChatBot"
+import SalamPopup from "./components/SalamPopup"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <div className="flex min-h-screen bg-gray-50">
         <Sidebar />
         <DarkModeToggle/>
+        <SalamPopup/>
         <main className="flex-1 ml-0 md:ml-64 transition-all duration-300">
           <Routes>
             <Route path="/" element={<Homepages />} />

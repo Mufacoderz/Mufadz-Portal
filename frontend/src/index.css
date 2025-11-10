@@ -21,5 +21,13 @@
     animation: shine 3s infinite;
 }
 
+h1, h2, h3, h4{
+    font-family: 'Changa';
+}
+
+p{
+    font-family: 'Noto Kufi Arabic';
+}
+
 
 

@@ -7,7 +7,7 @@ export default function TanyaFadzAIButton() {
             <button
                 className="
                 relative overflow-hidden rounded-full 
-                bg-gradient-to-r from-sky-400 via-blue-500 to-indigo-600
+                bg-gradient-to-r from-indigo-600 via-blue-500 to-sky-400
                 text-white dark:text-gray-800 font-semibold px-5 py-2.5
                 shadow-lg shadow-blue-300/40 dark:shadow-blue-700/40
                 transition-all duration-300 ease-out
@@ -22,6 +22,7 @@ export default function TanyaFadzAIButton() {
                     Tanya Fadz AI
                     <Bot w-5 h-5/>
                 </span>
+                <span className="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-white/30 to-transparent translate-x-[-100%] animate-[shine_2.5s_infinite]" />
                 </Link>
 
             </button>
