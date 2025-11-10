@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import Hero from "./Hero"
 import JadwalSholat from "./JadwalSholat"
 import KalenderModern from "./Kalender"
-import MorphingShape from "./../Animated.Background"
+import MorphingShape from "./../BlobBackgorund"
 
 const Home = () => {
     return (
@@ -14,7 +14,9 @@ const Home = () => {
                 transition-colors duration-500
             "
         >
+            <div className="flex justify-center">
                 <MorphingShape/>
+            </div>
 
             <div className="relative w-full max-w-full mx-auto px-4 sm:px-6 md:px-12 lg:px-24 flex flex-col gap-16 box-border">
             

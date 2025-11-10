@@ -24,7 +24,7 @@ export default function TanyaFadzAIButton({setOpen}: FadzProps) {
                 <Link to={"/chatbot"} onClick={()=> setOpen(false)} >
                     <span className="relative z-10 flex items-center gap-2">
                     Tanya Fadz AI
-                    <Bot w-5 h-5/>
+                    <Bot />
                 </span>
                 <span className="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-white/30 to-transparent translate-x-[-100%] animate-[shine_2.5s_infinite]" />
                 </Link>

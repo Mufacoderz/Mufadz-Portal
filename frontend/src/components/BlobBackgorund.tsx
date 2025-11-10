@@ -4,13 +4,12 @@ export default function MorphingShape() {
     return (
         <motion.div
             className="
-        absolute top-32 -left-10 sm:left-36 
-        translate-x-1/2 translate-y-1/2
-        w-[500px] h-[500px]
+        fixed w-[400px] h-[400px] mt-20 sm:mt-0
+        sm:w-[700px] sm:h-[600px] 
         bg-gradient-to-tr from-sky-200 via-blue-300 to-indigo-400
         dark:from-sky-900 dark:via-blue-950 dark:to-indigo-950
         opacity-80 rounded-[40%]
-        z-0 shadow-lg hidden sm:block
+        shadow-lg  z-0
         "
             animate={{
                 borderRadius: [
