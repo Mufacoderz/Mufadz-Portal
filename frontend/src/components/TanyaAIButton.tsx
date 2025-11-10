@@ -9,7 +9,7 @@ export default function TanyaFadzAIButton({setOpen}: FadzProps) {
     return (
         <div className="px-6 mt-3">
             <button
-                className="
+                className=" 
                 relative overflow-hidden rounded-full 
                 bg-gradient-to-r from-indigo-600 via-blue-500 to-sky-400 dark:from-sky-400 dark:via-blue-500 dark:to-indigo-600
                 text-white dark:text-gray-800 font-semibold px-5 py-2.5
