@@ -23,10 +23,10 @@ const HeaderSidebar = () => {
                         className="ml-3 w-8 rounded-full transition-transform duration-300 group-hover:scale-110"
                     />
                     <div className="greeting flex flex-col">
-                        <h2 className="font-semibold text-sm text-gray-600 dark:text-gray-300 cursor-pointer group-hover:text-green-500 dark:group-hover:text-green-300">
-                            <Link to={"/login"} className='hover:text-green-700 dark:hover:text-green-100'>Masuk</Link>
+                        <h2 className="font-semibold text-sm text-gray-600 dark:text-gray-300 cursor-pointer ">
+                            <Link to={"/login"} className='hover:text-green-500 dark:hover:text-green-100'>Masuk</Link>
                             /
-                            <Link to={"/register"} className='hover:text-green-700 dark:hover:text-green-100'>Daftar</Link>
+                            <Link to={"/register"} className='hover:text-green-500 dark:hover:text-green-100'>Daftar</Link>
                         </h2>
                     </div>
                 </div>
