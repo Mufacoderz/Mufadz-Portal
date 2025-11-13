@@ -4,9 +4,11 @@ import HeadingPage from "../../components/Heading"
 const QuranList = () => {
     return (
         <>
-            <div className="py-10 w-[80%] mx-auto">
+            <div className="dark:bg-gray-900">
+                <div className="py-10 w-[80%] max-w-3xl mx-auto">
                 <HeadingPage title="Baca Al-Quran" />
                 <SurahContainer />
+            </div>
             </div>
         </>
     )

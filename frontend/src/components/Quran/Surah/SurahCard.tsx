@@ -9,16 +9,18 @@ type SurahCardProps = {
 function SurahCard({ surah }: SurahCardProps) {
     return (
         <Link to={`/surah/${surah.nomor}`}>
-            <div className="bg-dark p-4 rounded-lg flex justify-between gap-3">
+            <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-blue-100 dark:border-gray-700 hover:border-blue-700 dark:hover:border-blue-100
+                        rounded-2xl p-5 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer
+                        hover:-translate-y-1 flex justify-between gap-3">
                 <div className="flex text-left gap-3">
                     <Number nomor={surah.nomor} />
                     <div className="text-light">
-                        <p className="font-bold text-base">{surah.namaLatin}</p>
-                        <p className="text-subtle">{surah.arti}</p>
-                        <p className="text-subtle">{surah.tempatTurun} • {surah.jumlahAyat}</p>
+                        <p className="font-bold text-base dark:text-gray-300">{surah.namaLatin}</p>
+                        <p className="text-subtle dark:text-gray-300">{surah.arti}</p>
+                        <p className="text-subtle dark:text-gray-300">{surah.tempatTurun} • {surah.jumlahAyat}</p>
                     </div>
                 </div>
-                <p className="font-bold text-xl text-arab-blue">{surah.nama}</p>
+                <p className="font-bold text-xl text-blue-700 dark:text-blue-300">{surah.nama}</p>
             </div>
         </Link>
     );
