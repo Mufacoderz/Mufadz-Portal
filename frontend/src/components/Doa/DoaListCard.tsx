@@ -23,7 +23,7 @@ const DoaListCard = () => {
     if (loading)
         return (
             <div className="flex justify-center items-center h-64">
-                <p className="text-blue-500 dark:text-blue-300 text-lg animate-pulse flex items-center gap-2">
+                <p className="text-textbg-textLight dark:text-txtbg-textDark text-lg animate-pulse flex items-center gap-2">
                     <Sparkles className="animate-spin-slow" /> Memuat do'a...
                 </p>
             </div>
@@ -59,10 +59,10 @@ const DoaListCard = () => {
                         
                         className="flex items-center justify-between w-full ">
                             <div className="flex items-start gap-3">
-                                <div className="bg-blue-500 dark:bg-blue-300 text-white dark:text-gray-800 w-10 h-10 flex items-center justify-center rounded-full font-semibold shadow-sm">
+                                <div className="bg-textLight dark:bg-textDark text-white dark:text-gray-800 w-10 h-10 flex items-center justify-center rounded-full font-semibold shadow-sm">
                                     {doa.id}
                                 </div>
-                                <h3 className="text-base font-semibold text-gray-800 dark:text-white group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors flex-1">
+                                <h3 className="text-base font-semibold text-gray-800 dark:text-white group-hover:text-blue-700 dark:group-hover:text-txtbg-textDark transition-colors flex-1">
                                     {doa.judul}
                                 </h3>
                             </div>

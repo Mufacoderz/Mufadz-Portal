@@ -7,7 +7,7 @@ type DetailSurahInfoProps = {
 
 function DetailSurahInfo({ surah }: DetailSurahInfoProps) {
   return (
-    <div className="relative rounded-2xl bg-blue-500 dark:bg-blue-300 text-white dark:text-gray-700 shadow-lg overflow-hidden w-full max-w-xl">
+    <div className="relative rounded-2xl bg-textLight dark:bg-textDark text-white dark:text-gray-700 shadow-lg overflow-hidden w-full max-w-xl">
   <span className="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full animate-[shine_2.5s_infinite]" />
   <div className="py-4 px-4 pb-14 flex flex-col gap-2">
     <h2 className="font-bold tracking-wide text-[clamp(1rem,2vw,1.5rem)]">
@@ -24,7 +24,7 @@ function DetailSurahInfo({ surah }: DetailSurahInfoProps) {
   </div>
 
   <button
-    className="group absolute bottom-0 left-0 w-full bg-blue-600/30 hover:bg-blue-500/50 backdrop-blur-sm py-2 px-4 flex items-center justify-between text-[clamp(0.7rem,1.2vw,0.875rem)] font-medium transition-all duration-200"
+    className="group absolute bottom-0 left-0 w-full bg-blue-600/30 hover:bg-textLight/50 backdrop-blur-sm py-2 px-4 flex items-center justify-between text-[clamp(0.7rem,1.2vw,0.875rem)] font-medium transition-all duration-200"
   >
     <span className="text-white/90 dark:text-gray-700/90 group-hover:text-white dark:group-hover:text-gray-950">
       Tentang Surah <span className="font-semibold">{surah.namaLatin}</span>

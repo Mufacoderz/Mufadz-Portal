@@ -37,7 +37,7 @@ const Hero = () => {
                 <motion.div
                     animate={{ y: [0, -10, 0] }}
                     transition={{ duration: 2, ease: "easeInOut", repeat: Infinity }}
-                    className="px-6 py-3 bg-blue-600 dark:bg-blue-300 text-white dark:text-gray-800 font-semibold rounded-xl shadow-md hover:bg-blue-700 dark:hover:bg-blue-200 hover:shadow-lg transition-all"
+                    className="px-6 py-3 bg-textLight dark:bg-textDark text-white dark:text-gray-800 font-semibold rounded-xl shadow-md hover:bg-blue-700 dark:hover:bg-blue-200 hover:shadow-lg transition-all"
                 >
                     Mulai Sekarang
                 </motion.div>
@@ -45,7 +45,7 @@ const Hero = () => {
                 <motion.div
                     animate={{ y: [0, -10, 0] }}
                     transition={{ duration: 2, ease: "easeInOut", repeat: Infinity }}
-                    className="px-6 py-3 bg-transparent dark:border-blue-300 border-2 border-blue-600 text-blue-600 dark:text-blue-300 dark:hover:text-gray-800 font-semibold rounded-xl hover:bg-blue-600 hover:text-white dark:hover:bg-blue-300 transition-all"
+                    className="px-6 py-3 bg-transparent dark:border-textDark border-2 border-textLight text-textLight dark:text-textDark dark:hover:text-gray-800 font-semibold rounded-xl hover:bg-textLight hover:text-white dark:hover:bg-textDark transition-all"
                 >
                     <Link to={"/register"}>
                         Gabung Sekarang
