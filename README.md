@@ -1,6 +1,6 @@
 # 🌙 Mufadz — Muslim Life App
 
-**Mufadz App** adalah proyek latihan jangka panjang berbasis **TypeScript**, **Tailwind CSS**, dan **PERN Stack**.  
+**Mufadz App** adalah proyek latihan jangka panjang berbasis **TypeScript**, **Tailwind CSS**, dan **PERN/MERN Stack**.  
 Tujuan utama proyek ini adalah untuk melatih skill web development modern sekaligus membangun **web app Islami** yang bermanfaat.
 
 ---
@@ -8,7 +8,6 @@ Tujuan utama proyek ini adalah untuk melatih skill web development modern sekali
 ## 🎯 Tujuan Proyek
 Membangun aplikasi Islami dengan fitur-fitur yang relevan untuk kehidupan sehari-hari umat Muslim, seperti:
 - 🕌 Jadwal Sholat
-- 🧭 Arah Kiblat
 - 📅 Kalender Hijriyah & Masehi
 - 📖 Baca Al-Qur'an
 - 🔔 (Rencana) Reminder
@@ -25,15 +24,15 @@ Aplikasi ini dikembangkan **step-by-step**, seiring dengan peningkatan skill dan
 ### **Fase 1 — Guest Mode (Tanpa Login)**
 Fitur utama:
 - Menampilkan jadwal sholat berdasarkan lokasi pengguna.
-- Menunjukkan arah kiblat dengan kompas digital.
 - Menyediakan kalender Hijriyah & Masehi.
+- Menyediakan Al-Qur'an Digital, serta beberapa do'a harian
 
 > Login, chat realtime, dan fitur lainnya akan dikembangkan di fase berikutnya sesuai progress pembelajaran.
 
 ---
 
 ## ✨ Catatan
-Proyek ini dibuat sebagai latihan pribadi, namun tetap terbuka untuk kolaborasi, saran, atau masukan.  
+Proyek ini dibuat sebagai latihan pribadi, namun tetap terbuka untuk saran, atau masukan.  
 > Semua fitur akan dikembangkan secara bertahap agar setiap tahap menjadi pembelajaran yang bermakna.
 
 ---
